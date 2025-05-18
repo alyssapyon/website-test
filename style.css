@@ -1,0 +1,67 @@
+ @font-face {
+     font-family: cafe_nero_m54;
+     src: url('font/cafe_nero_m54/Cafe\ Nero\ M54.ttf');
+ }
+
+
+ /* video {
+    pointer-events: none;
+} */
+
+
+ * {
+     font-family: 'Jura', Trebuchet MS, sans-serif;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5 {
+     font-family: 'cafe_nero_m54', Trebuchet MS, sans-serif;
+     text-transform: uppercase;
+     /* -webkit-text-stroke-width: 2px; */
+     /* -webkit-text-stroke-color: black; */
+     /* -webkit-text-fill-color: transparent; */
+ }
+
+ .nav-link {
+     font-family: 'cafe_nero_m54', Trebuchet MS, sans-serif;
+     text-transform: uppercase;
+ }
+
+ * {
+     /* background-color: black; */
+ }
+
+
+ /* MONOTHON SCROLLING TEXT BELOW */
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee:hover {
+    animation-play-state: paused;
+}
+
+.marquee p {
+  display: inline-block;
+  color: red;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
