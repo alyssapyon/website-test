@@ -15,7 +15,9 @@
   <!-- GOOGLE FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jura:wght@300..700&display=swap"
+    rel="stylesheet">
 
   <!-- BOOTSTRAP -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -34,11 +36,11 @@
 
 <!-- Padding to show content below sticky navbar -->
 
-<body style="padding-top: 300px;">
+<body style="padding-top: 225px; background-color: black;">
   <!-- HEADER, NAVIGATION BAR -->
   <header>
     <!-- TODO: REMOVE "pb-0" WHEN REMOVING MONOTHON BAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top pb-0" id="navbar">
+    <nav class="navbar navbar-expand-lg fixed-top pb-1" id="navbar">
       <div class="w-100">
         <!-- ANIMATED LOGO ROW BELOW -->
         <div class="row">
@@ -59,7 +61,7 @@
 
         <!-- NAVBAR LIST OF PAGES BELOW -->
         <div class="row">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -105,7 +107,7 @@
   <!-- FULL WIDTH VIDEO BELOW -->
   <!-- TODO: code to be used for final video -->
   <div class="container-fluid mb-5 mx-0 px-0">
-    <video id="bgVideo" class="w-100" preload="true" oncontextmenu="return false" autoplay loop muted>
+    <video id="bgVideo" class="norightclick w-100" preload="true" oncontextmenu="return false" autoplay loop muted>
       <source src="vid/monotestvid.mp4" type="video/mp4" />
     </video>
   </div>
@@ -217,7 +219,27 @@
       <p>Need custom character art, emotes, or reference sheets?</p>
     </div>
     <div class="row">
-      <!-- TODO: insert image sliding -->
+      <!-- IMG SLIDER BELOW-->
+      <div class="slider" reverse="false" style="
+          --width: 250px;
+          --height: 250px;
+          --quantity: 10;
+          ">
+        <div class="list">
+          <!-- .item*10>img[src="https://picsum.photos/250/250"] -->
+          <div class="item" style="--position: 1"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 2"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 3"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 4"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 5"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 6"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 7"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 8"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 9"><img src="https://picsum.photos/250/250" alt=""></div>
+          <div class="item" style="--position: 10"><img src="https://picsum.photos/250/250" alt=""></div>
+        </div>
+      </div>
+      <!-- IMG SLIDER ABOVGE -->
     </div>
     <div class="row text-center">
       <a href="art-commissions.html"><button class="btn btn-primary">More about Art Commissions</button></a>
@@ -225,49 +247,56 @@
   </div>
 
   <!-- SHOP -->
-  <div class="container-fluid p-5">
-    <div class="container-fluid">
-      <h1>Shop</h1>
-      <p>Come collect cute stickers designed by yours truly!</p>
+  <div class="container-fluid p-5" style="background-color: black; margin-bottom: 100px;">
+    <div class="container-fluid" style="background-color: lightpink;">
+      <h1 class="pinktext">Shop</h1>
+      <p style="color: hotpink;">Come collect cute stickers designed by yours truly!</p>
     </div>
-    <div class="container-fluid p-5">
-      <h3>Ko-Fi</h3>
+    <div class="container-fluid my-3 py-4 text-center" style="background-color: rgba(255, 255, 255, 0.1); border: rgb(111, 61, 86) 3px solid; border-radius: 15px;">
+      <h3 class="pinktext">Ko-Fi</h3>
       <div class="row">
-        <div class="col-12 col-md-6">
-          <p>Cute animal and fanart designs</p>
-          <div class="row w-75">
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/sunnyandmewo.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/sunnyandkel.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/heroandmari.jpg" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <p>Limited Edition 404Mono merch!</p>
-          <div class="row w-75">
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/sunnyandmewo.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/sunnyandkel.jpg" alt="">
-            </div>
-            <div class="col-4">
-              <img class="img-fluid" src="img/redbubble_omorimerch/heroandmari.jpg" alt="">
+        <div class="d-none d-xl-block col"></div>
+        <div class="col-12 col-md-6 col-xl-5 p-3">
+          <div class="px-1 py-3" style="background-color: black; border: rgb(176, 56, 116) 2px solid; border-radius: 10px;">
+            <p style="color: hotpink;">Cute animal and fanart designs</p>
+            <div class="row w-100 mx-auto">
+              <div class="col-6 col-lg-4">
+                <img class="img-fluid" src="img/kofi_merch/hades.png" alt="">
+              </div>
+              <div class="col-6 col-lg-4">
+                <img class="img-fluid" src="img/kofi_merch/bears.jpg" alt="">
+              </div>
+              <div class="d-none d-lg-block col-lg-4">
+                <img class="img-fluid" src="img/kofi_merch/baldursgate.png" alt="">
+              </div>
             </div>
           </div>
         </div>
+        <div class="col-12 col-md-6 col-xl-5 p-3">
+          <div class="px-1 py-3" style="background-color: black; border: rgb(176, 56, 116) 2px solid; border-radius: 10px;">
+            <p style="color: hotpink;">Limited Edition 404Mono merch!</p>
+            <div class="row w-100 mx-auto">
+              <div class="col-6 col-lg-4">
+                <img class="img-fluid" src="img/kofi_monomerch/monomerch1.png" alt="">
+              </div>
+              <div class="col-6 col-lg-4">
+                <img class="img-fluid" src="img/kofi_monomerch/monomerch2.jpg" alt="">
+              </div>
+              <div class="d-none d-lg-block col-lg-4">
+                <img class="img-fluid" src="img/kofi_monomerch/monomerch3.png" alt="">
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-none d-xl-block col"></div>
       </div>
-      <a href="art-commissions.html"><button class="btn btn-primary">Go to Ko-Fi</button></a>
+      <a href="art-commissions.html"><button class="my-3" style="border: 1px hotpink solid; box-shadow: 0 0 0.8em #ff00b75e;">Go to Ko-Fi<span class="chevron right"></span></button></a>
     </div>
-    <div class="container-fluid p-5">
-      <h3>Redbubble</h3>
-      <p>Come checkout OMORI Fanart Stickers</p>
-      <div class="row w-75">
+    <div class="container-fluid my-3 py-4 text-center" style="background-color: rgba(255, 255, 255, 0.1); border: rgb(111, 61, 86) 3px solid; border-radius: 15px;">
+      <h3 class="pinktext">Redbubble</h3>
+      <p style="color: hotpink;">Come checkout OMORI Fanart Stickers</p>
+      <div class="row mx-auto" style="width: 90%;">
+        <div class="d-none d-md-block col"></div>
         <div class="col-4 col-md-2">
           <img class="img-fluid" src="img/redbubble_omorimerch/sunnyandmewo.jpg" alt="">
         </div>
@@ -277,93 +306,97 @@
         <div class="col-4 col-md-2">
           <img class="img-fluid" src="img/redbubble_omorimerch/heroandmari.jpg" alt="">
         </div>
+        <div class="d-none d-md-block col"></div>
       </div>
-      <a href="art-commissions.html"><button class="btn btn-primary">Go to Redbubble</button></a>
+      <a href="art-commissions.html"><button class="mt-4 mb-2" style="border: 1px hotpink solid; box-shadow: 0 0 0.8em #ff00b75e;">Go to Redbubble<span class="chevron right"></span></button></a>
     </div>
   </div>
 
-  <!-- CONTACT ME -->
+  <!-- CONTACT MONO -->
   <!-- CONTACT FORM: formspree.io -->
-  <div class="container-fluid p-5">
-    <h1>Contact me</h1>
+  <div class="row p-5 align-items-center"
+    style="background-image: linear-gradient(#000000, white 80%);">
+    <div class="col-0 col-xl-1"></div>
+    <div class="col-12 col-md-4 col-lg-6 col-xl-5" style="padding-bottom: 50px;">
+      <img class="img-fluid d-none  d-md-block d-lg-none " src="img/Ky0b0_home_contact.PNG">
+      <img class="img-fluid d-block d-md-none  d-lg-block" src="img/Ky0b0_home_contact _crop.PNG">
+    </div>
+    <div class="col-12 col-md-8 col-lg-6 col-xl-5 text-center">
+      <h1 class="pinktext text-center my-4">Contact Mono</h1>
+      <div class="container pe-2">
+        <form action="https://formspree.io/f/xkgrbvgz" method="POST" target="_blank">
+          <input type="text" name="name" placeholder="Name" class="w-100" style="padding: 16px; margin-bottom: 2%"
+            required>
+          <input type="email" name="email" placeholder="Email Address" class="w-100"
+            style="padding: 16px; margin-bottom: 2%" required>
+          <input type="text" name="subject" placeholder="Subject" class="w-100" style="padding: 16px; margin-bottom: 2%"
+            required>
+          <textarea name="message" placeholder="Message" class="w-100"
+            style="padding: 16px; margin-bottom: 2%; height: 150px;" required></textarea>
 
-    <form action="https://formspree.io/f/xkgrbvgz" method="POST" target="_blank">
-      <label>
-        Your name:
-        <input type="text" name="name" placeholder="Name" required>
-      </label>
-      <label>
-        Your email:
-        <input type="email" name="email" placeholder="name@example.com" required>
-      </label>
-      <label>
-        Subject :
-        <input type="text" name="subject" placeholder="Art Commission Inquiry - [Your Name]" required>
-      </label>
-      <label>
-        Message:
-        <textarea name="message" style="resize:both; max-width: 500px" required></textarea>
-      </label>
-      <!-- your other form fields go here -->
-      <button type="submit">Send</button>
-    </form>
-    <p>Alternatively, drop me a direct email at <a href="mailto:404deus@gmail.com">404deus@gmail.com</a></p>
+          <div class="text-center">
+            <button type="submit" class="">Send<span class="chevron right"></span></button>
+          </div>
+        </form>
+      </div>
+      <p style="margin-top: 60px;">Alternatively, drop me a direct email at <a
+          href="mailto:404deus@gmail.com">404deus@gmail.com</a></p>
+    </div>
+    <div class="col-0 col-xl-1"></div>
   </div>
 
   <!-- FOOTER -->
+  <!-- ICONS FROM https://www.iconfinder.com/search?q=youtube+font+awesome -->
   <footer>
-    <div class="container-fluid" style="background-color: #E3E7FF;">
-      <div class="row">
-        <div class="col-12 col-sm-4">
-          <p>Website Links</p>
-          <ul>
-            <li><a href="./">Home</a></li>
-            <li><a href="./">About Mono</a></li>
-            <li><a href="./">Social Media</a></li>
-            <li><a href="./">Contact</a></li>
-            <li><a href="./">Art Commissions</a></li>
-            <li><a href="./">Shop</a></li>
-            <li><a href="./">Monothon</a></li>
-          </ul>
+    <div class="container-fluid p-0 m-0" style="overflow-x: hidden; background-color: white;">
+      <img class="w-100 mx-auto" src="svg/footerwave.svg" alt="" style="z-index: 1;">
+    </div>
+    <div class="footerdiv row p-5" style="z-index: 2; margin-top: -5px;">
+      <div class="col-12 col-sm-4">
+        <div class="footertext container">
+          <h2>404MONO</h2>
+          <p>Copyright © 2025 - 404MONO</p>
         </div>
-        <div class="col-12 col-sm-4">
-          <p>Vtuber Social Media</p>
-          <ul>
-            <li><a href="./">Vtuber Beacon</a></li>
-            <li><a href="./">Twitch</a></li>
-            <li><a href="./">Discord</a></li>
-            <li><a href="./">Twitter</a></li>
-            <li><a href="./">Bluesky</a></li>
-            <li><a href="./">Tiktok</a></li>
-            <li><a href="./">Youtube</a></li>
-            <li><a href="./">Instagram</a></li>
-            <li><a href="./">Reddit</a></li>
-            <li><a href="./">Email</a></li>
-          </ul>
-        </div>
-        <div class="col-12 col-sm-4">
-          <p>Art Links</p>
-          <ul>
-            <li><a href="./">Art Beacon</a></li>
-            <li><a href="./">Twitter</a></li>
-            <li><a href="./">Instagram</a></li>
-            <li><a href="./">Bluesky</a></li>
-            <li><a href="./">Tumblr</a></li>
-            <li><a href="./">Art Commissions</a></li>
-            <li><a href="./">Shop - Ko-Fi</a></li>
-            <li><a href="./">Shop - Redbubble</a></li>
-          </ul>
+      </div>
+      <div class="d-none d-sm-block col-sm-4"></div>
+      <div class="col-12 col-sm-4">
+        <div class="footerlinks d-flex justify-content-end">
+          <div class="flex-contents">
+            <a href="https://twitch.tv/404mono" target="_blank">
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M391.17,103.47H352.54v109.7h38.63ZM285,103H246.37V212.75H285ZM120.83,0,24.31,91.42V420.58H140.14V512l96.53-91.42h77.25L487.69,256V0ZM449.07,237.75l-77.22,73.12H294.61l-67.6,64v-64H140.14V36.58H449.07Z" />
+              </svg>
+            </a>
+          </div>
+          <div class="flex-contents">
+            <a href="https://x.com/404mono" target="_blank">
+              <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+              </svg>
+            </a>
+          </div>
+          <div class="flex-contents">
+            <a href="https://www.tiktok.com/@404mono" target="_blank">
+              <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z" />
+              </svg>
+            </a>
+          </div>
+          <div class="flex-contents">
+            <a href="https://www.youtube.com/@404mono" target="_blank">
+              <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid" style="background-color: #00062C;">
-      <p class="text-center" style="color: #FFFFFF; opacity: 0.4; padding: 5px 0px 7px 0px;">Copyright © 404MONO 2025
-      </p>
-
-    </div>
   </footer>
-
-
 </body>
 
 
